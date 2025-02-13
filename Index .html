@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mukkamalla Hemanth Reddy Portfolio</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(145deg, #e3f2fd, #bbdefb); /* Light Blue Gradient */
+      color: #333333;
+      text-align: center;
+      padding: 20px;
+      margin: 0;
+    }
+
+    header {
+      padding: 20px;
+      background: linear-gradient(145deg, #ffffff, #e3f2fd); /* Soft Blue Header */
+      color: #333333;
+      border-radius: 20px;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(255, 255, 255, 0.7);
+    }
+
+    header h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 20px auto;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.7);
+      object-fit: cover;
+    }
+
+    .category-buttons {
+      margin: 20px 0;
+    }
+
+    button {
+      background-color: #1976d2;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 5px;
+      transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.7);
+    }
+
+    button:hover {
+      background-color: #1565c0;
+      transform: translateY(-2px);
+      box-shadow: 7px 7px 14px rgba(0, 0, 0, 0.2), -7px -7px 14px rgba(255, 255, 255, 0.7);
+    }
+
+    .portfolio-category {
+      display: none;
+      padding: 20px;
+      background: #ffffff;
+      color: #333333;
+      border-radius: 20px;
+      box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.1), -10px -10px 25px rgba(255, 255, 255, 0.7);
+      margin-top: 20px;
+      text-align: left;
+      animation: fadeIn 0.5s ease-in-out;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h2 {
+      color: #333333;
+      font-size: 24px;
+      border-bottom: 2px solid #1976d2;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    p, li {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #555555;
+    }
+
+    a {
+      color: #1976d2;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mukkamalla Hemanth Reddy Portfolio</h1>
+    <p>Welcome to my personal portfolio! Explore my details below.</p>
+    <img src="content://com.android.externalstorage.documents/document/primary%3AHemanth%20lp%20(2)%2FIMG_2564.JPG" alt="Mukkamalla Hemanth Reddy" class="profile-photo">
+  </header>
+
+  <section class="category-buttons">
+    <button onclick="showCategory('about')">About Me</button>
+    <button onclick="showCategory('family')">Family Details</button>
+    <button onclick="showCategory('education')">Education Details</button>
+    <button onclick="showCategory('certificates')">Certificates</button>
+    <button onclick="showCategory('projects')">Projects</button>
+    <button onclick="showCategory('internships')">Internships</button>
+    <button onclick="showCategory('resume')">Resume</button>
+    <button onclick="showCategory('contact')">Contact</button>
+  </section>
+
+  <section id="about" class="portfolio-category">
+    <h2>About Me</h2>
+    <p>Hello! I am Mukkamalla Hemanth Reddy, a dedicated student currently pursuing my B.Tech at Audisankara College of Engineering and Technology. I am passionate about technology, web development, and data science, with a focus on building real-world solutions. Thank you for visiting my portfolio!</p>
+  </section>
+
+  <section id="family" class="portfolio-category">
+    <h2>Family Details</h2>
+    <p><strong>Father's Name:</strong> M. Yellareddy</p>
+    <p><strong>Mother's Name:</strong> M. Vegamma</p>
+  </section>
+
+  <section id="education" class="portfolio-category">
+    <h2>Education Details</h2>
+    <p><strong>School:</strong> Sri Srinivasa EM High School</p>
+    <p><strong>Intermediate (MPC):</strong> Dr. B.S.R College</p>
+    <p><strong>B.Tech:</strong> Audisankara College of Engineering and Technology</p>
+  </section>
+
+  <section id="certificates" class="portfolio-category">
+    <h2>Certificates</h2>
+    <ul>
+      <li>Java Programming – J.P. Morgan Chase & Co.</li>
+      <li>Software Engineering – Infosys</li>
+      <li>Introduction to Artificial Intelligence – CodSoft</li>
+      <li>Python for Data Science – IBM</li>
+      <li>Group Discussion – TCS ION</li>
+      <li>Data Science – CodSoft</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="portfolio-category">
+    <h2>Projects</h2>
+    <ul>
+      <li>ATS-Friendly Resume Reviewer – A tool that analyzes resumes for proper formatting and keyword usage.</li>
+      <li>Student Study Material Website – Created a study material download website for college students.</li>
+      <li>Garbage Collection Software – Developed a waste management application for optimizing collection schedules.</li>
+    </ul>
+  </section>
+
+  <section id="internships" class="portfolio-category">
+    <h2>Internships</h2>
+    <ul>
+      <li><strong>CodSoft (Data Science):</strong> Completed a remote internship in data science, gaining experience in data analysis and virtual project collaboration.</li>
+      <li><strong>CodSoft (Java Programming):</strong> Achieved proficiency in Java web application development.</li>
+      <li><strong>Value Laden (College Bus Tracking):</strong> Developed a real-time bus tracking interface for students and staff.</li>
+      <li><strong>AICTE Edunet (Face Attendance Tracking):</strong> Worked on an advanced face recognition system for attendance tracking.</li>
+    </ul>
+  </section>
+
+  <section id="resume" class="portfolio-category">
+    <h2>Resume</h2>
+    <p>Click the link below to view or download my resume:</p>
+    <a href="your-resume.pdf" target="_blank">View My Resume</a>
+  </section>
+
+  <section id="contact" class="portfolio-category">
+    <h2>Contact Information</h2>
+    <p><strong>Email:</strong> <a href="mailto:hemanthreddymukkamalla@gmail.com">hemanthreddymukkamalla@gmail.com</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/hemanth-reddy-mukkamalla-3b6491269?" target="_blank">View My LinkedIn Profile</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/Hemanthreddy-123" target="_blank">View My GitHub</a></p>
+  </section>
+
+  <script>
+    function showCategory(category) {
+      const categories = document.querySelectorAll('.portfolio-category');
+      categories.forEach((cat) => cat.style.display = 'none');
+      document.getElementById(category).style.display = 'block';
+    }
+    showCategory('about');
+  </script>
+</body>
+</html>
