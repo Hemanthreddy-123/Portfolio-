@@ -1,0 +1,11 @@
+[build]
+  # Navigate into the nested React project directory to run the build
+  base = "Portfolio--Hemanth"
+  command = "npm run build"
+  publish = "dist"
+
+# Route all requests to index.html to support React Router single-page application routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
