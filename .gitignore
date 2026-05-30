@@ -1,0 +1,28 @@
+# Dependency directories
+node_modules/
+Portfolio--Hemanth/node_modules/
+
+# Production build directories
+dist/
+Portfolio--Hemanth/dist/
+
+# API keys and local environment files
+.env
+Portfolio--Hemanth/.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS metadata files
+.DS_Store
+Thumbs.db
